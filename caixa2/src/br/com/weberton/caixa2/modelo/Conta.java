@@ -94,6 +94,7 @@ public abstract class Conta implements Tributavel{
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + agencia;
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		result = prime * result + numero;
 		return result;
 	}
@@ -109,14 +110,16 @@ public abstract class Conta implements Tributavel{
 		Conta other = (Conta) obj;
 		if (agencia != other.agencia)
 			return false;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
 		if (numero != other.numero)
 			return false;
 		return true;
 	}
 
-
-
-	
 	
 	
 	
