@@ -2,6 +2,12 @@ package br.com.weberton.caixa2.modelo;
 
 import br.com.weberton.caixa2.excecao.ValorInvalidoException;
 
+/**
+ * Classe Template de Conta
+ * 
+ * @author Weberton Silva
+ *
+ */
 public abstract class Conta implements Tributavel{
 	
 	private String nome;
@@ -56,6 +62,12 @@ public abstract class Conta implements Tributavel{
 	
 	public abstract void atualizar (double valor);
 	
+	
+	/**
+	 * realiza um saque na conta, dado um valor passado. 
+	 * 
+	 * @param valor: valor a ser sacado
+	 */
 	public void sacar(double valor){
 		this.saldo -= valor;
 	}
@@ -72,4 +84,40 @@ public abstract class Conta implements Tributavel{
 		return this.getSaldo() * 0.01;		
 	}
 
+	@Override
+	public String toString() {
+		return "Conta [nome=" + nome + ", numero=" + numero + ", saldo=" + saldo + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + agencia;
+		result = prime * result + numero;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Conta other = (Conta) obj;
+		if (agencia != other.agencia)
+			return false;
+		if (numero != other.numero)
+			return false;
+		return true;
+	}
+
+
+
+	
+	
+	
+	
 }
