@@ -1,6 +1,6 @@
 package br.com.weberton.caixa2.modelo;
 
-public class ContaPoupanca extends Conta{
+public class ContaPoupanca extends Conta implements Comparable<ContaPoupanca>{
 
 	public ContaPoupanca(String nome, int agencia, int numero) {
 		super(nome, agencia, numero);
@@ -12,4 +12,19 @@ public class ContaPoupanca extends Conta{
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public int compareTo(ContaPoupanca outraConta) {
+		
+		if(this.getNome().compareTo(outraConta.getNome()) < 0){
+			return -1;		
+		}
+		
+		if(this.getNome().compareTo(outraConta.getNome()) > 0){
+			return 1;
+		}
+		
+		return 0;
+	}
+
 }
