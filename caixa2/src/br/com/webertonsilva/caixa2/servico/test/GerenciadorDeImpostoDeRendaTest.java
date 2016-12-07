@@ -1,13 +1,13 @@
-package br.com.weberton.caixa2.servico.test;
+package br.com.webertonsilva.caixa2.servico.test;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import br.com.weberton.caixa2.excecao.ValorInvalidoException;
-import br.com.weberton.caixa2.modelo.ContaCorrente;
-import br.com.weberton.caixa2.modelo.SeguroVida;
-import br.com.weberton.caixa2.servico.GerenciadorDeImpostoDeRenda;
+import br.com.webertonsilva.caixa2.excecao.ValorInvalidoException;
+import br.com.webertonsilva.caixa2.modelo.ContaCorrente;
+import br.com.webertonsilva.caixa2.modelo.SeguroVida;
+import br.com.webertonsilva.caixa2.servico.GerenciadorDeImpostoDeRenda;
 
 public class GerenciadorDeImpostoDeRendaTest {
 

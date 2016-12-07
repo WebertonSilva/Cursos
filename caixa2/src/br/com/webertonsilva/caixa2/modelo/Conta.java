@@ -1,6 +1,6 @@
-package br.com.weberton.caixa2.modelo;
+package br.com.webertonsilva.caixa2.modelo;
 
-import br.com.weberton.caixa2.excecao.ValorInvalidoException;
+import br.com.webertonsilva.caixa2.excecao.ValorInvalidoException;
 
 /**
  * Classe Template de Conta

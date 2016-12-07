@@ -1,4 +1,4 @@
-package br.com.weberton.caixa2.excecao;
+package br.com.webertonsilva.caixa2.excecao;
 
 public class ValorInvalidoException extends Exception{
 	

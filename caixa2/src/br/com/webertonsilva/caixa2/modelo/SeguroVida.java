@@ -1,4 +1,4 @@
-package br.com.weberton.caixa2.modelo;
+package br.com.webertonsilva.caixa2.modelo;
 
 public class SeguroVida implements Tributavel{
 

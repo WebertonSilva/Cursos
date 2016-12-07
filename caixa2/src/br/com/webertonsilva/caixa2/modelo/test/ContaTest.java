@@ -1,4 +1,4 @@
-package br.com.weberton.caixa2.modelo.test;
+package br.com.webertonsilva.caixa2.modelo.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -14,10 +14,10 @@ import java.util.Set;
 
 import org.junit.Test;
 
-import br.com.weberton.caixa2.excecao.ValorInvalidoException;
-import br.com.weberton.caixa2.modelo.Conta;
-import br.com.weberton.caixa2.modelo.ContaCorrente;
-import br.com.weberton.caixa2.modelo.ContaPoupanca;
+import br.com.webertonsilva.caixa2.excecao.ValorInvalidoException;
+import br.com.webertonsilva.caixa2.modelo.Conta;
+import br.com.webertonsilva.caixa2.modelo.ContaCorrente;
+import br.com.webertonsilva.caixa2.modelo.ContaPoupanca;
 
 public class ContaTest {
 	

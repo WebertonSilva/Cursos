@@ -1,6 +1,6 @@
-package br.com.weberton.caixa2.servico;
+package br.com.webertonsilva.caixa2.servico;
 
-import br.com.weberton.caixa2.modelo.Conta;
+import br.com.webertonsilva.caixa2.modelo.Conta;
 
 class AtualizadorDeContas {
     private double saldoTotal = 0;

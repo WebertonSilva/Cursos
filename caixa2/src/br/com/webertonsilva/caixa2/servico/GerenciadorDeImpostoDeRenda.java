@@ -1,6 +1,6 @@
-package br.com.weberton.caixa2.servico;
+package br.com.webertonsilva.caixa2.servico;
 
-import br.com.weberton.caixa2.modelo.Tributavel;
+import br.com.webertonsilva.caixa2.modelo.Tributavel;
 
 public class GerenciadorDeImpostoDeRenda {
 	private static double TOTAL = 0;
